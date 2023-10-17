@@ -5,6 +5,28 @@ return {
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",
     build = ":Copilot auth",
+    keys = {
+      {
+        "<leader>ct",
+        "<cmd>Copilot toggle<cr>",
+        desc = "Toggle",
+      },
+      {
+        "<leader>cp",
+        "<cmd>Copilot panel open<cr>",
+        desc = "Open panel"
+      },
+      {
+        "<leader>ca",
+        "<cmd>Copilot panel accept",
+        desc = "Accept current highlighted panel suggestion"
+      },
+      {
+        "<leader>cs",
+        "<cmd>Copilot status<cr>",
+        desc = "Status"
+      }
+    },
     opts = {
       suggestion = { enabled = false },
       panel = { enabled = false },
